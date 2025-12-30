@@ -276,6 +276,32 @@ ul{
 }
 
 
+.poster-block{
+  margin-top: 10px;
+  text-align: center;
+}
+
+.poster-thumb{
+  width: 100%;
+  max-width: 420px;
+  border-radius: 6px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.poster-thumb:hover{
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+}
+
+.poster-caption{
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
+
 /* Mobile: sidebar goes under content */
 @media (max-width: 900px){
   .layout{ grid-template-columns: 1fr; }
