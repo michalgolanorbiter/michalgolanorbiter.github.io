@@ -236,7 +236,7 @@ ul{
 }
 
 .sidebar{
-  background: #2f6f67;  /* your panel color */
+  background: #255c53;  /* your panel color */
   color: #fff;
   padding: 24px;
   align-self: stretch;  /* important: makes it full height of the grid row */
@@ -299,6 +299,27 @@ ul{
   font-size: 14px;
   line-height: 1.4;
   color: var(--muted);
+}
+
+
+.teaching-feedback-link{
+  margin-top: 16px;
+}
+
+.feedback-button{
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid var(--accent);
+  border-radius: 6px;
+  text-decoration: none;
+  color: var(--accent);
+  font-size: 14px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.feedback-button:hover{
+  background: var(--accent);
+  color: #fff;
 }
 
 
