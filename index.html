@@ -1,84 +1,198 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Michal Golan – Space Physicist</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <style>
-        body {
-            font-family: Georgia, serif;
-            margin: 0;
-            padding: 0;
-            background: #fff;
-            color: #222;
-            display: flex;
-            flex-direction: row;
-        }
-        .main {
-            max-width: 700px;
-            padding: 40px;
-        }
-        .sidebar {
-            background: #f6f6f9;
-            padding: 30px;
-            max-width: 400px;
-            border-left: 1px solid #ddd;
-        }
-        h1 {
-            color: #4B0082;
-        }
-        a {
-            color: #4B0082;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        @media (max-width: 900px) {
-            body {
-                flex-direction: column;
-            }
-            .sidebar {
-                border-left: none;
-                border-top: 1px solid #ddd;
-            }
-        }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Michal Golan — Space Physicist</title>
+  <meta name="description" content="Michal Golan — Space Physicist. Research, publications, teaching, and contact." />
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-<div class="main">
-    <h1>Michal Golan</h1>
-    <p><strong>28-year-old Space Physicist • Teaching Assistant • Space Weather Enthusiast</strong></p>
-    <p>I investigate shock waves and magnetic structures in near-Earth space using data from NASA’s <em>Magnetospheric Multiscale Mission (MMS)</em>. My focus is on how plasma behaves at the Earth’s bow shock and how those dynamics shape space-weather conditions.</p>
-    <p>At <strong>Ben-Gurion University</strong>, I assist in undergraduate physics courses — guiding students through mechanics, thermodynamics, quantum theory, and the practical side of scientific computing with MATLAB and LaTeX. My goal is to make rigorous concepts feel accessible and connected to real data.</p>
-    <p>One of my long-standing goals is to contribute meaningfully to an actual space mission — whether through data analysis, mission planning, or scientific collaboration. My work today is a step in that direction.</p>
-    <p>I continue this work while also serving in the Israeli military reserves, under the difficult circumstances our country is facing. Research and teaching have become, for me, a form of resilience.</p>
+  <div class="layout">
+    <!-- LEFT SIDEBAR -->
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="name">Michal Golan</div>
+        <div class="tagline">Space Physicist</div>
+      </div>
 
-    <h3>A Note of Solidarity</h3>
-    <p>Several members of our university community are still held hostage in Gaza. Their absence is a constant reminder to pursue science with purpose and humanity. This page is dedicated to them and to the hope of their safe return.</p>
+      <nav class="nav" aria-label="Site navigation">
+        <a class="nav-link active" href="#about">About</a>
+        <a class="nav-link" href="#research">Research</a>
+        <a class="nav-link" href="#publications">Publications</a>
+        <a class="nav-link" href="#teaching">Teaching</a>
+        <a class="nav-link" href="#talks">Talks</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
 
-    <h3>Links</h3>
-    <ul>
-        <li><a href="https://scholar.google.com/citations?user=QP2VqAEAAAAJ">Google Scholar</a></li>
-        <li><a href="https://www.researchgate.net/profile/Michal-Golan">ResearchGate</a></li>
-        <li><a href="https://www.linkedin.com/in/michal-golan">LinkedIn</a></li>
-        <li><a href="https://orcid.org/0000-0003-XXXX-XXXX">ORCID</a></li>
-        <li><a href="https://www.wikidata.org/wiki/Q134777260">Wikidata</a></li>
-    </ul>
-</div>
-<div class="sidebar">
-    <h2>Professional Snapshot</h2>
-    <ul>
-        <li><strong>Field:</strong> Space Weather, Plasma Physics</li>
-        <li><strong>Degree:</strong> M.Sc. Candidate, BGU</li>
-        <li><strong>Teaching:</strong> Physics I–III, Quantum I, Thermo, Stat Mech</li>
-        <li><strong>Skills:</strong> MATLAB, Python, LaTeX, Data Analysis</li>
-        <li><strong>Experience:</strong> TA (Sep 2023–), Research Assistant (Gedalin)</li>
-        <li><strong>Conferences:</strong> AGU 2024, EGU 2025</li>
-        <li><strong>Pilot License:</strong> In progress (Expected 2026)</li>
-        <li><strong>Languages:</strong> Hebrew, English, Portuguese</li>
-    </ul>
-</div>
+      <div class="sidebar-footer">
+        <div class="small">
+          <span class="muted">Links:</span>
+          <div class="links">
+            <a href="#" title="Add your Google Scholar link later">Google Scholar</a>
+            <a href="#" title="Add your ORCID link later">ORCID</a>
+            <a href="#" title="Add your GitHub link later">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main">
+      <header class="hero">
+        <div class="hero-text">
+          <h1>Michal Golan</h1>
+          <p class="subtitle">
+            Space plasma physics • Earth’s bow shock • MMS mission
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn" href="#publications">See publications</a>
+            <a class="btn ghost" href="#contact">Contact</a>
+          </div>
+
+          <p class="note">
+            This is the base template. We’ll add your photo, an MMS graphic, and real content section-by-section.
+          </p>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Placeholder for profile image or graphic">
+          <div class="placeholder">
+            <div class="ph-title">Image placeholder</div>
+            <div class="ph-sub">Later: profile photo / MMS graphic</div>
+          </div>
+        </div>
+      </header>
+
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          Write 4–7 lines here: who you are, where you work/study, and your main research focus.
+          Keep it simple and academic.
+        </p>
+        <ul class="bullets">
+          <li><strong>Affiliation:</strong> Ben-Gurion University of the Negev (BGU)</li>
+          <li><strong>Focus:</strong> Collisionless shocks, downstream magnetic oscillations, MMS data</li>
+          <li><strong>Tools:</strong> MATLAB, Python, LaTeX, data analysis workflows</li>
+        </ul>
+      </section>
+
+      <section id="research" class="section">
+        <h2>Research</h2>
+
+        <div class="card">
+          <h3>Persistent downstream magnetic oscillations at Earth’s bow shock</h3>
+          <p class="muted">
+            Short description (2–4 lines). What’s the question, what data, what’s new?
+          </p>
+          <div class="pillrow">
+            <span class="pill">MMS</span>
+            <span class="pill">Bow shock</span>
+            <span class="pill">Wave activity</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Quasi-parallel / quasi-perpendicular structure</h3>
+          <p class="muted">
+            Another short project summary. We can add figures and links later.
+          </p>
+          <div class="pillrow">
+            <span class="pill">Shock geometry</span>
+            <span class="pill">Statistics</span>
+            <span class="pill">Case studies</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <h2>Publications</h2>
+
+        <div class="pub">
+          <div class="pub-title">Paper Title (replace later)</div>
+          <div class="pub-meta">
+            Authors • Journal • Year •
+            <a href="#" class="pub-link">DOI</a>
+          </div>
+        </div>
+
+        <div class="pub">
+          <div class="pub-title">Paper Title (replace later)</div>
+          <div class="pub-meta">
+            Authors • Journal • Year •
+            <a href="#" class="pub-link">DOI</a>
+          </div>
+        </div>
+
+        <p class="muted small">
+          Later we’ll format these nicely and add your real DOI links + maybe BibTeX.
+        </p>
+      </section>
+
+      <section id="teaching" class="section">
+        <h2>Teaching</h2>
+        <div class="card">
+          <h3>Courses</h3>
+          <ul class="bullets">
+            <li>Physics 1B</li>
+            <li>Physics 2B — Thermodynamics</li>
+            <li>Physics 3A</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="talks" class="section">
+        <h2>Talks</h2>
+        <div class="card">
+          <h3>Conferences</h3>
+          <ul class="bullets">
+            <li>AGU 2024 — Poster</li>
+            <li>EGU 2025 — Oral</li>
+            <li>AGU 2025 — (add what you presented)</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="card">
+          <p>
+            Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a><br />
+            Location: Beer-Sheva, Israel
+          </p>
+          <p class="muted small">
+            (We’ll replace with your real email + links when you’re ready.)
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="small muted">
+          © <span id="year"></span> Michal Golan • Built with GitHub Pages
+        </div>
+      </footer>
+    </main>
+  </div>
+
+  <script>
+    // Active nav highlighting + smooth behavior
+    const links = document.querySelectorAll(".nav-link");
+    const sections = [...document.querySelectorAll(".section")];
+
+    const setActive = () => {
+      const y = window.scrollY + 120;
+      let current = sections[0]?.id;
+      for (const s of sections) {
+        if (s.offsetTop <= y) current = s.id;
+      }
+      links.forEach(a => a.classList.toggle("active", a.getAttribute("href") === "#" + current));
+    };
+
+    window.addEventListener("scroll", setActive);
+    setActive();
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
