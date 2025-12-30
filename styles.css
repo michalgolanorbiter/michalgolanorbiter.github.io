@@ -329,3 +329,84 @@ ul{
   .sidebar{ position: relative; top: auto; min-height: auto; }
   .sidebar-inner{ position: relative; top: auto; }
 }
+
+
+
+
+.section{
+  scroll-margin-top: 110px; /* so anchors don’t hide under sticky topbar */
+}
+
+
+/* ===== Mobile polish ===== */
+@media (max-width: 900px){
+  /* header layout */
+  .topbar__inner{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+  }
+
+  .brand__logo{
+    height: 110px;   /* tweak 90–140 until it feels right */
+  }
+
+  .nav{
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .nav__link{
+    font-size: 15px;
+    padding: 6px 6px;
+  }
+
+  /* hero */
+  .hero{
+    height: 170px;   /* reduce banner height on phone */
+  }
+
+  /* main layout becomes single column */
+  .layout{
+    grid-template-columns: 1fr;
+    width: min(1100px, 96vw);
+  }
+
+  .main{
+    padding: 18px 16px 40px;
+  }
+
+  /* sidebar becomes a normal section (not sticky) */
+  .sidebar{
+    position: relative;
+    top: auto;
+    min-height: auto;
+    padding: 18px 16px;
+  }
+
+  .sidebar-inner{
+    position: relative;
+    top: auto;
+  }
+
+  /* cards stack */
+  .split{
+    grid-template-columns: 1fr;
+  }
+
+  /* profile chips fit nicely */
+  .profile-links{
+    gap: 8px;
+  }
+  .profile-links a{
+    font-size: 13px;
+    padding: 6px 9px;
+  }
+
+  /* titles */
+  h1{ font-size: 32px; }
+  h2{ font-size: 22px; }
+}
+
+
