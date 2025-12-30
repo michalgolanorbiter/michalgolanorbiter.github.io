@@ -236,7 +236,7 @@ ul{
 }
 
 .sidebar{
-  background: #255c53;  /* your panel color */
+  background: #70cdbd;  /* your panel color */
   color: #fff;
   padding: 24px;
   align-self: stretch;  /* important: makes it full height of the grid row */
