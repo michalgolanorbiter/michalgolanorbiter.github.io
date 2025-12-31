@@ -93,10 +93,8 @@ body{
 .container{
   max-width: var(--container);
   margin: 0 auto;
-  padding: 0 18px 28px; /* top = 0 */
+  padding: 0 18px;   /* removed vertical padding */
 }
-
-
 
 
 .section{
@@ -226,10 +224,9 @@ ul{
   max-width: var(--container);
   margin: 0 auto;
   display: grid;
-  grid-template-columns:  320px 1fr;
+  grid-template-columns:  1fr 320px;
   gap: 0;
   align-items: stretch; /* important */
-
 }
 
 
@@ -239,7 +236,7 @@ ul{
 }
 
 .sidebar{
-  background: #3aa08f;  /* your panel color */
+  background: #70cdbd;  /* your panel color */
   color: #fff;
   padding: 24px;
   align-self: stretch;  /* important: makes it full height of the grid row */
@@ -381,17 +378,15 @@ ul{
     padding: 18px 16px 40px;
   }
 
-  
-.sidebar{
-  background: #2f6f67;
-  color: #fff;
-  padding: 24px;
-  min-height: 100vh;
-  position: sticky;
-  top: 86px;         /* <-- IMPORTANT: below the sticky header */
-  align-self: start;
-}
-
+  /* sidebar becomes a normal section (not sticky) */
+  .sidebar{
+    position: relative;
+    top: auto;
+    min-height: auto;
+    padding: 18px 16px;
+  }  .main{
+    padding: 18px 16px 40px;
+  }
 
 
 
