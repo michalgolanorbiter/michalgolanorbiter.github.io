@@ -420,3 +420,30 @@ ul{
 }
 
 
+.footer-logos{
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+
+.footer-logos img{
+  height: 34px;           /* small & professional */
+  width: auto;
+  opacity: 0.75;          /* not loud */
+  transition: opacity 0.2s ease;
+}
+
+.footer-logos img:hover{
+  opacity: 1;
+}
+
+
+.footer-note{
+  text-align: center;
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 8px;
+}
