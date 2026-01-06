@@ -436,14 +436,27 @@ ul{
   }
 
   /* main layout becomes single column */
+@media (max-width: 900px){
+
   .layout{
-    grid-template-columns: 1fr;
-    width: min(1100px, 96vw);
+    display: flex;
+    flex-direction: column;
   }
 
-  .main{
-    padding: 18px 16px 40px;
+  .main{ order: 1; }
+  .sidebar{ 
+    order: 2;
+    position: relative;
+    top: auto;
+    min-height: auto;
   }
+
+  .sidebar-inner{
+    position: relative;
+    top: auto;
+  }
+}
+
 
   
 .sidebar{
@@ -458,11 +471,6 @@ ul{
 
 
 
-
-  .sidebar-inner{
-    position: relative;
-    top: auto;
-  }
 
   /* cards stack */
   .split{
