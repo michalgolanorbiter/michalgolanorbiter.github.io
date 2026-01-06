@@ -438,24 +438,35 @@ ul{
   /* main layout becomes single column */
 @media (max-width: 900px){
 
+  /* Put MAIN first, SIDEBAR second */
   .layout{
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main"
+      "sidebar";
   }
+  .main{ grid-area: main; }
+  .sidebar{ grid-area: sidebar; }
 
-  .main{ order: 1; }
-  .sidebar{ 
-    order: 2;
-    position: relative;
+.sidebar{
+  background: #2f6f67;
+  color: #fff;
+  padding: 24px;
+  min-height: 100vh;
+  position: sticky;
+  top: 86px;         /* <-- IMPORTANT: below the sticky header */
+  align-self: start;
+}
+
+  /* Kill the desktop sidebar behavior on phones */
+  .sidebar{
+    position: static;   /* or relative */
     top: auto;
     min-height: auto;
-  }
-
-  .sidebar-inner{
-    position: relative;
-    top: auto;
+    align-self: stretch;
   }
 }
+
 
 
   
