@@ -438,7 +438,19 @@ ul{
   /* main layout becomes single column */
 @media (max-width: 900px){
 
-  /* Put MAIN first, SIDEBAR second */
+.sidebar{
+  background: #2f6f67;
+  color: #fff;
+  padding: 24px;
+  min-height: 100vh;
+  position: sticky;
+  top: 86px;         /* <-- IMPORTANT: below the sticky header */
+  align-self: start;
+}
+
+
+@media (max-width: 900px){
+  /* stack layout */
   .layout{
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -448,38 +460,19 @@ ul{
   .main{ grid-area: main; }
   .sidebar{ grid-area: sidebar; }
 
-.sidebar{
-  background: #2f6f67;
-  color: #fff;
-  padding: 24px;
-  min-height: 100vh;
-  position: sticky;
-  top: 86px;         /* <-- IMPORTANT: below the sticky header */
-  align-self: start;
-}
-
-  /* Kill the desktop sidebar behavior on phones */
+  /* IMPORTANT: on mobile, sidebar should NOT be sticky */
   .sidebar{
-    position: static;   /* or relative */
+    position: static;
     top: auto;
     min-height: auto;
-    align-self: stretch;
+    height: auto;
   }
+
+  /* your other mobile rules... */
+  .split{ grid-template-columns: 1fr; }
+  h1{ font-size: 32px; }
+  h2{ font-size: 22px; }
 }
-
-
-
-  
-.sidebar{
-  background: #2f6f67;
-  color: #fff;
-  padding: 24px;
-  min-height: 100vh;
-  position: sticky;
-  top: 86px;         /* <-- IMPORTANT: below the sticky header */
-  align-self: start;
-}
-
 
 
 
