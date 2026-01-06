@@ -342,6 +342,66 @@ ul{
 }
 
 
+
+/* reserch section */
+
+.research-figure{
+  max-width: 560px !important;
+  margin: 18px auto 20px !important;
+  padding: 14px !important;
+  background: #fff !important;
+  border: 1px solid var(--line) !important;
+  border-radius: 10px !important;
+}
+
+.research-figure img{
+  display: block !important;
+  width: 100% !important;
+  max-width: 520px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  border-radius: 8px !important;
+}
+
+
+.research-figure figcaption{
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.4;
+  text-align: center;
+}
+
+
+
+.hero-container {
+  position: relative;
+  text-align: center;
+}
+
+.hero-container video {
+  width: 100%;
+}
+
+.hero-video {
+  width: 100%;
+  max-width: 600px;   /* ← change this number */
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #222;
+}
+
+
+
 /* ===== Mobile polish ===== */
 @media (max-width: 900px){
   /* header layout */
