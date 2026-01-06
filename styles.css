@@ -127,8 +127,9 @@ p{
 
 ul{
   margin: 0;
-  padding-left: 18px hint;
+  padding-left: 18px;
 }
+
 
 .split{
   display: grid;
@@ -406,8 +407,9 @@ ul{
 
 
 
-/* ===== Mobile polish ===== */
+/* ===== Mobile (single clean block) ===== */
 @media (max-width: 900px){
+
   /* header layout */
   .topbar__inner{
     flex-direction: column;
@@ -416,9 +418,7 @@ ul{
     padding: 12px 14px;
   }
 
-  .brand__logo{
-    height: 110px;   /* tweak 90–140 until it feels right */
-  }
+  .brand__logo{ height: 110px; }
 
   .nav{
     justify-content: center;
@@ -430,70 +430,47 @@ ul{
     padding: 6px 6px;
   }
 
-  /* hero */
-  .hero{
-    height: 170px;   /* reduce banner height on phone */
-  }
+  .hero{ height: 170px; }
 
-  /* main layout becomes single column */
-@media (max-width: 900px){
-
-.sidebar{
-  background: #2f6f67;
-  color: #fff;
-  padding: 24px;
-  min-height: 100vh;
-  position: sticky;
-  top: 86px;         /* <-- IMPORTANT: below the sticky header */
-  align-self: start;
-}
-
-
-@media (max-width: 900px){
-  /* stack layout */
+  /* STACK: main first, sidebar second */
   .layout{
     grid-template-columns: 1fr;
     grid-template-areas:
       "main"
       "sidebar";
   }
-  .main{ grid-area: main; }
+  .main{ grid-area: main; padding: 22px 16px 40px; }
   .sidebar{ grid-area: sidebar; }
 
-  /* IMPORTANT: on mobile, sidebar should NOT be sticky */
+  /* CRITICAL: disable sticky/full-height sidebar on mobile */
   .sidebar{
     position: static;
     top: auto;
     min-height: auto;
     height: auto;
+    align-self: stretch;
   }
-
-  /* your other mobile rules... */
-  .split{ grid-template-columns: 1fr; }
-  h1{ font-size: 32px; }
-  h2{ font-size: 22px; }
-}
-
-
+  .sidebar-inner{
+    position: static;
+    top: auto;
+    padding-top: 12px;
+  }
 
   /* cards stack */
-  .split{
-    grid-template-columns: 1fr;
-  }
-
-  /* profile chips fit nicely */
-  .profile-links{
-    gap: 8px;
-  }
-  .profile-links a{
-    font-size: 13px;
-    padding: 6px 9px;
-  }
+  .split{ grid-template-columns: 1fr; }
 
   /* titles */
   h1{ font-size: 32px; }
   h2{ font-size: 22px; }
+
+  /* profile chips */
+  .profile-links{ gap: 8px; }
+  .profile-links a{
+    font-size: 13px;
+    padding: 6px 9px;
+  }
 }
+
 
 
 .footer-logos{
